@@ -1,5 +1,9 @@
 package com.venkataramana.employeeservice.repository;
 
-public interface EmployeeRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.venkataramana.employeeservice.entity.Employee;
+
+public interface EmployeeRepository extends JpaRepository<Employee,Long>{
 
 }
